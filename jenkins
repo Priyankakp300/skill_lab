@@ -1,10 +1,10 @@
-pipeline{
+pipeline {
     agent any
 
     stages{
-       stages('Checkout') {
+       stage('Checkout') {
           steps {
-             git branch 'main', url:
+             git branch:'main', url:
 'https://github.com/Priyankakp300/skill_lab.git'
           }
        }
